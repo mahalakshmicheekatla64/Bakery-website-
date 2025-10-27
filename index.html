@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+          <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -469,7 +469,7 @@
     document.querySelectorAll('section').forEach(sec => sec.style.display = 'none');
     document.getElementById(id).style.display = 'block';
     document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
-    document.querySelector(nav a[onclick="showSection('${id}')"])?.classList.add('active');
+    document.querySelector(`nav a[onclick="showSection('${id}')"]`)?.classList.add('active');
   }
 
   // LOGIN / REGISTER
@@ -496,7 +496,7 @@
         alert("Passwords do not match!");
         return;
       }
-      alert(Registration successful! Please login now.);
+      alert(`Registration successful! Please login now.`);
       toggleForm();
     }
   }
@@ -573,7 +573,7 @@
     document.getElementById('emptyCart').style.display = 'none';
     const cartItems = document.getElementById('cartItems');
     const item = document.createElement('p');
-    item.textContent = ${name} - ₹${price};
+    item.textContent = `${name} - ₹${price}`;
     cartItems.appendChild(item);
     alert(name + " added to cart!");
   }
@@ -615,4 +615,5 @@
   }
 </script>
 </body>
+
 </html>
